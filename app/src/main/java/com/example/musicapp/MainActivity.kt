@@ -1,6 +1,7 @@
 package com.example.musicapp
 
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -12,11 +13,13 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
+        var songDisplayTxt = findViewById<TextView>(R.id.songDisplayed)
+
         Song("Ordinary", "Alex Warren", 2026, "2.5")
         Song("Swim", "BTS", 2026, "3.5")
         Song("So Easy", "Olivia Dean")
 
-        
+
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
