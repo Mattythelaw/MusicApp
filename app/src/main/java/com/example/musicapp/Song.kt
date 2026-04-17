@@ -10,7 +10,7 @@ class Song (songName: String, songArtist: String, songYear: Int, songDuration: S
     var year: Int = 0
     var duration: String = " "
 
-    //
+    //added secondary constructor for song name and artist if not shown//
     constructor(songName: String, songArtist: String) : this(songName, songArtist,
                                                     0, " ")
 
@@ -40,7 +40,7 @@ class Song (songName: String, songArtist: String, songYear: Int, songDuration: S
 
     //function to favourite song
     fun Favourite(): Boolean{
-        Log.v("Song", "$name is favourited now")
+        Log.v("Song", "$name is  favourited now")
         //return placeholder
         return true
 
