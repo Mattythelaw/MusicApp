@@ -14,6 +14,11 @@ class Song (songName: String, songArtist: String, songYear: Int, songDuration: S
     constructor(songName: String, songArtist: String) : this(songName, songArtist,
                                                     0, " ")
 
+    //added another secondary constructor to accomodate for artist name or year if not shown
+    // (Ice task 7).
+    constructor(songArtist: String, songYear: Int) : this( " ", songArtist,
+        songYear, " ")
+
     //initializing the variables/attributes for the song objects//
     init{
         name = songName
