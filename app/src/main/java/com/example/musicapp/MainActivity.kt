@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        var songDisplayTxt = findViewById<TextView>(R.id.songDisplayed)
+        val songDisplayTxt = findViewById<TextView>(R.id.songDisplayed)
         var songDisplay = " "
 
         //calling the Song class for a song object
