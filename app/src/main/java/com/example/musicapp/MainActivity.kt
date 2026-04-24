@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         var song2 = Song("Swim", "BTS", 2026,
             "3.5")
         var song3 = Song("So Easy", "Olivia Dean")
+        var song4 = Song("Risk it All", "Bruno Mars", )
 
         //creating array to hold songs//
         var songs = arrayOf<Song>(song1, song2, song3)
