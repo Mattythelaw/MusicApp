@@ -10,14 +10,14 @@ class Song (songName: String, songArtist: String, songYear: Int, songDuration: S
     var year: Int = 0
     var duration: String = " "
 
-    //added secondary constructor for song name and artist if not shown//
-    constructor(songName: String, songArtist: String) : this(songName, songArtist,
-                                                    0, " ")
+    // Secondary constructor 1 - user does not know the artist name but knows the year
+    constructor(songName: String, songYear: Int, songDuration: String)
+            : this(songName, "Unknown Artist", songYear, songDuration)
 
     //added another secondary constructor to accomodate for artist name or year if not shown
-    // (Ice task 7).
-    constructor(songArtist: String, songYear: Int) : this( " ", songArtist,
-        songYear, " ")
+    constructor(songName: String, songDuration: String, placeholder: Boolean)
+            : this(songName, "Unknown Artist", 0, songDuration)
+
 
     //initializing the variables/attributes for the song objects//
     init{
