@@ -24,6 +24,11 @@ class MainActivity : AppCompatActivity() {
         var song3 = Song("So Easy", 2024, "3.2")
         var song4 = Song("Risk it All", "4.0", true )
 
+        // Two new songs using the secondary constructor as required by the Ice task 7
+        var song5 = Song("Golden Hour", 2023, "3.8")
+        var song6 = Song("Blinding Lights", "4.2", true)
+
+
 
         //creating array to hold songs//
         var songs = arrayOf<Song>(song1, song2, song3, song4)
