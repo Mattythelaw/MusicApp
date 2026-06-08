@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
 
         //creating array to hold songs//
-        var songs = arrayOf<Song>(song1, song2, song3, song4)
+        var songs = arrayOf<Song>(song1, song2, song3, song4, song5, song6)
 
         //for loop to loop through and display items in song array
         for (song in songs){
